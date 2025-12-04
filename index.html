@@ -3,53 +3,49 @@
     <head>
         <title>Google</title>
         <style>
-            html, body {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-content: center;
-                height: 100%;
-                width: 98%;
-                background-color: rgb(34, 35, 37);
-                margin-left: 9px;               
-            }
-
-            body > div {
-                align-content: center;
-                justify-content:center;
-                width: 100%;
+            html, body {                
                 height: auto;
+                width: 98vw;
+                background-color: rgb(34, 35, 37);            
+            }
+            
+            body * {
+                font-family: arial;          
+            }            
+
+            .containers {
+                display: flex;
+                justify-content:center;
+                margin: 20px 0px 0px 0px;
             }
 
             #tabs {
-                align-items: right;
-            }
-
-            .centeredcontainer {
-                height: 50%;
+                height: 40px;
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                margin-bottom: 10px;
             }
 
             form {
                 height: 100%;
-                width: 100%;
+                width: 70vw;
                 display: flex;
                 align-content: center;
                 justify-content: center;
                 flex-wrap: wrap;
             }
 
-            form * {
-                font-family: sans-serif;
-            }
-
             .buttons {
-                padding: 11px 16px;
-                margin: 10px 4px;
-                font-weight: 600;
+                padding: 10px 18px;
+                margin: 10px 6px;
+                font-weight: 530;
                 color: white;
-                border-radius: 8px;
+                border-radius: 10px;
                 background-color: rgb(51, 51, 51);
                 border: none;
+                font-size: 15px;
             }
 
             .buttons:hover {
@@ -57,15 +53,15 @@
             }
 
             input[type="text"] {
-                height: 17%;
+                height: 46px;
                 width: 100%;
-                border-radius: 27px;
+                border-radius: 25px;
                 color: white;
-                background-color: #5e6169;
-                padding: 0px 30px;
+                background-color: #565860;
+                padding: 0px 25px;
                 border: none;
-                font-size:medium;
-                margin-bottom: 20px;
+                font-size:16px;
+                margin-bottom: 18px;
             }
 
             input[type="text"]:hover {
@@ -79,22 +75,35 @@
             }
 
             form > div {
-                align-items: center;
+                display: flex;
+                justify-content: center;
+                width: 100%;
             }
             img {
-                height: 200px;
+                height: 32vh;
+                margin: 10px;
+            }
+            a {
+                color: white;
+                font-size: 13px;
+                padding-right: 10px;
+                margin-right: 8px;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration:underline ;
             }
         </style>
     </head>
     <body>
         <div id="tabs">
-            <a href="">Images</a>
-            <a href="">Advanced Search</a>
+            <a href="src/pages/images.html">Images</a>
+            <a href="src/pages/advanced.html">Advanced Search</a>
         </div>
-        <div>
+        <div class="containers">
             <img src="src/img/Boogle.png" alt="Boogle">
         </div>
-        <div class="centeredcontainer">        
+        <div class="containers">        
             <form action="https://www.google.com/search">
                 <input type="text" name="q">
                 <div>
