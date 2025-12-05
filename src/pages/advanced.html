@@ -3,10 +3,11 @@
     <head>
         <title>Google Advanced Search</title>
         <style>
-            html, body {                
-                height: auto;
+            html, body { 
                 width: 98vw;
-                background-color: rgb(34, 35, 37);            
+                background-color: rgb(34, 35, 37);
+                margin: 0px;
+                padding: 0px;         
             }
             
             body * {
@@ -15,26 +16,91 @@
 
             body > div {
                 display: flex;
-                justify-content:center;
-                margin: 10px 0px 0px 0px;
+                flex-wrap: wrap;
             }
 
             #tabs {
-                height: 25vh;
+                height: 100px;
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                border-bottom: 1px solid #606060;
+                border-bottom: 1px solid #606060;                
             }
 
             form {
                 height: 100%;
-                width: 88vw;
+                width: 500px;
                 display: flex;
-                align-content: center;
-                justify-content: center;
                 flex-wrap: wrap;
+                align-content: center;
+                justify-content: flex-start;
+                margin-left: 12px;                
+            }
+            
+            input[type="text"] {
+                height: 42px;
+                width: 320px;
+                color: white;
+                background-color: rgb(34, 35, 37);
+                padding: 0px 10px;
+                border: 1px solid rgb(203, 203, 203);
+                font-size:16px;
+                margin: 0px 0px 0px 5px;
+                border-radius: 4px;
+            }
+
+            input[type="text"]:focus {
+                outline: 1px solid rgb(165, 195, 227) ;
+            }
+
+            form > div {
+                display: flex;
+                align-items: center;
+                /*flex-wrap: wrap;*/
+                width: 100%;
+                margin-bottom: 35px;
+            }            
+                        
+            img {
+                margin-top: 2px;
+                height: 33px; 
+            }
+            a {
+                color: white;
+                font-size: 13px;
+                padding-right: 10px;
+                margin-right: 8px;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration:underline ;
+            }
+
+           form > div > p {
+                color: rgb(169, 168, 168);
+                width: 130px;
+                font-size: 14px;
+                margin: 0px 10px 0px 0px;
+            }
+
+            .maintitle {
+                color: #d0d0d0;
+                font-size: 28px;
+                width: 100%;
+                padding-left: 12px;
+                margin: 40px 0px 25px 0px;
+            }
+
+            .titles {
+                color: #d0d0d0;
+                font-size: 22px;
+                width: 100%;
+                padding-left: 12px;
+            }
+
+            .h-style {
+                margin-left: 40px;
             }
 
             .buttons {
@@ -48,71 +114,17 @@
                 font-size: 14px;
             }
 
-            input[type="text"] {
-                height: 42px;
-                width: 300px;
-                color: white;
-                background-color: rgb(34, 35, 37);
-                padding: 0px 25px;
-                border: 1px solid rgb(203, 203, 203);
-                font-size:16px;
-                margin: 0px 0px 35px 0px;
-                border-radius: 4px;
-            }
-
-            input[type="text"]:focus {
-                outline: 1px solid rgb(165, 195, 227) ;
-            }
-
-            form > div {
-                display: flex;
-                justify-content: left;
-                width: 100%;
-            }
-            
             .sub-button {
+                width: 100%;
                 display: flex;
                 justify-content: flex-end;
             }
             
-            img {
-                height: 33px;
-                margin: 0px 0px 0px 40px;
-            }
-            a {
-                color: white;
-                font-size: 13px;
-                padding-right: 10px;
-                margin-right: 8px;
-                text-decoration: none;
-            }
-            a:hover {
-                text-decoration:underline ;
-            }
-
-            div > p {
-                color: rgb(169, 168, 168);
-                width: 130px;
-                font-size: 14px;
-                margin-right: 10px;
-            }
-
-            .maintitle {
-                color: #d0d0d0;
-                font-size: 28px;
-                width: 100%;
-            }
-
-            .titles {
-                color: #d0d0d0;
-                font-size: 22px;
-                width: 100%;
-            }
         </style>
     </head>
     <body>
         <div id="tabs">
-            <div>
+            <div class="h-style">
                 <img src="../img/Boogle_advanced.png" alt="Boogle_advanced">
             </div>
             <div>
@@ -120,14 +132,14 @@
                 <a href="./images.html">Images</a>
             </div>
         </div>        
-        <div>        
-            <form action="https://www.google.com/advanced_search">
-                <div>
-                    <p class="maintitle">Advanced Search</p>
-                </div>
-                <div>
-                    <p class="titles">Find pages with</p>
-                </div>
+        <div class="h-style">
+            <p class="maintitle">Advanced Search</p>
+        </div>
+        <div class="h-style">
+            <p class="titles">Find pages with</p>
+        </div>
+        <div class="h-style">       
+            <form action="https://www.google.com/advanced_search">                
                 <div>
                     <p>All of these words:</p>
                     <input type="text" name="q">
