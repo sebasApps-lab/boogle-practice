@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Advanced Search</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <div class="tab-sec" id="as-tabs">
+            <div class="as-containers">
+                <a href="./index.html">
+                    <img id="astopicon" src="./img/Boogle_advanced.png" alt="Boogle_advanced">
+                </a>
+            </div>
+            <div class="tabs-block">
+                <a href="./index.html">Google Search</a>
+                <a href="./images.html">Images</a>
+            </div>
+        </div>        
+        <div class="as-containers">
+            <h1 class="titles">Advanced Search</h1>
+        </div>
+        <div class="as-containers">
+            <h2 class="titles">Find pages with</h2>
+        </div>
+        <div class="as-containers">       
+            <form id="asform" action="https://www.google.com/search">                
+                <div class="asform-block">
+                    <p>All of these words:</p>
+                    <input class="asinput-text" type="text" name="as_q">
+                </div>
+                <div class="asform-block">
+                    <p>This exact word or phrase:</p>
+                    <input class="asinput-text" type="text" name="as_epq">
+                </div>
+                <div class="asform-block">
+                    <p>Any of these words:</p>
+                    <input class="asinput-text" type="text" name="as_oq">
+                </div>
+                <div class="asform-block">
+                    <p>None of these words:</p>
+                    <input class="asinput-text" type="text" name="as_eq">
+                </div>
+                <div class="sub-button-container"> <!--The advanced search button now is blue with 'black' text-->
+                    <input id="as-buttons" type="submit" value="Advanced Search">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

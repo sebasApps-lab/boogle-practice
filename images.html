@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Google Search</title>
+        <title>Google Images</title>
         <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
         <div class="tab-sec">
-            <div class="tabs-block">
-                <a href="./images.html">Images</a>
-                <a href="./advanced.html">Advanced Search</a>
-            </div>
+            <a href="./index.html">Google Search</a>
+            <a href="./advanced.html">Advanced Search</a>
         </div>
         <div class="main-containers">
-            <img id="gsimg" src="./img/Boogle.png" alt="Boogle">
+            <img id="isimg" src="./img/Boogle_images.png" alt="Boogle_images">
         </div>
         <div class="main-containers">        
-            <form id="gsform" action="https://www.google.com/search">
+            <form id="isform" action="https://www.google.com/search">
+                <input type="hidden" name="tbm" value="isch">
                 <input class="search-bar" type="text" name="q">
                 <div>
                     <input class="main-buttons" type="submit" value="Google Search">
-                    <input class="main-buttons" type="submit" value="I'm Feeling Lucky" name="btnI">
                 </div>
             </form>
         </div>
